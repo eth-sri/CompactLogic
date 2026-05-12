@@ -2,6 +2,20 @@
 
 `compactlogic` is a Python 3.6+ package for PyTorch-based logic-gate networks. The original setup notes target PyTorch 1.9.0+ for CUDA builds. The package builds custom CUDA extensions, so the main installation requirement is a working CUDA-enabled PyTorch environment with a compatible local CUDA Toolkit.
 
+## Requirements
+
+- Python 3.6+
+- PyTorch (CUDA-enabled)
+- NVIDIA CUDA toolkit for building the custom CUDA extensions
+
+> ⚠️ CUDA is required. Ensure your installed `torch` version matches your CUDA runtime/toolkit.
+
+### Tested Environments
+
+- PyTorch: 1.13, 2.5, 2.11
+- CUDA: 12.2, 12.8, 13.0
+- NVCC: 11.8, 13.2
+
 ## Install from source
 
 This repository is intended to be installed from source:
@@ -37,9 +51,7 @@ nvidia-smi
 You can install PyTorch and torchvision builds for a specific CUDA version, for example:
 
 ```shell
-pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111  -f https://download.pytorch.org/whl/torch_stable.html  # CUDA 11.1
-pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html  # CUDA 11.3
-pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 -f https://download.pytorch.org/whl/torch_stable.html  # CUDA 11.7
+pip install torch==2.11.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130  # CUDA 13.0
 ```
 
 If you see an error like this while building the CUDA extension:
@@ -56,6 +68,7 @@ RuntimeError:
 
 then install a PyTorch build whose CUDA version matches your local CUDA Toolkit more closely, or use a machine/environment with a matching CUDA Toolkit. In some cases, trying a nearby older PyTorch/CUDA build can resolve mismatches even when the advertised versions appear compatible.
 
-## Tested versions
+[//]: # (## Tested versions)
 
-`compactlogic` has been tested with PyTorch 1.13 and 2.5.
+[//]: # ()
+[//]: # (`compactlogic` has been tested with PyTorch 1.13 and 2.5.)
