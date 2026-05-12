@@ -11,3 +11,5 @@ build/
 data-*/
 results/
 dist/
+
+.DS_Store
