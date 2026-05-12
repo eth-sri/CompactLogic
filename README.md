@@ -4,6 +4,7 @@ Official implementation for **Learning Compact Boolean Networks**.
 
 - Paper: [arXiv:2602.05830](https://arxiv.org/abs/2602.05830)
 - Repository: <https://github.com/eth-sri/CompactLogic>
+- Checkpoint archive: [Mega](https://mega.nz/file/O05ykbiT#8e1QHADmP-ECqL0DK53_MdAmR6SyItmrtZ3RXM6TAzE)
 - License: [MIT](LICENSE)
 
 CompactLogic is a PyTorch package for learning compact Boolean networks with differentiable training, discretizing them into logic-gate networks, and compiling trained models into FPGA-oriented circuit artifacts.
