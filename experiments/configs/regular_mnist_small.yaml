@@ -1,0 +1,26 @@
+dataset: mnist
+
+struct: regular
+num_chn: null
+
+seed: 0
+batch_size: 128
+learning_rate: 0.01
+
+num_iterations: 300_001
+eval_freq: 1_000
+
+model_scale: 8_000
+num_layers: 6
+tau: 10.0
+
+num_gates: 16
+residual_init: false
+
+resample: true
+patience: 100
+max_iters: null
+
+freeze: false
+min_iters: null
+freeze_num_layers: null

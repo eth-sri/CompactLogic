@@ -1,0 +1,9 @@
+lr: 0.02
+weight_decay: 0.002
+k: 32
+tau: 10
+dataset_name: tinyimagenet-3
+batch_size: 128
+input_channels: null
+implementation: cuda
+num_chn: 2

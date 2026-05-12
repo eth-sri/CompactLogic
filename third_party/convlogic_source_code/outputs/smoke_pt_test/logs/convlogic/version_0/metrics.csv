@@ -1,0 +1,4 @@
+epoch,step,test/acc,test/acc_eval,test/loss,test/loss_eval,train/acc,train/loss,val_eval/acc,val_eval/loss,val_no_eval/acc,val_no_eval/loss
+0,0,,,,,,,0.138671875,3.513169050216675,0.123046875,2.3752455711364746
+0,0,,,,,0.10546875,2.409379243850708,,,,
+1,1,0.111328125,0.109375,2.349154472351074,3.502528190612793,,,,,,

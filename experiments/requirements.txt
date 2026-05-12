@@ -1,0 +1,7 @@
+scikit-learn
+torch
+torchvision
+compactlogic
+pandas
+pyyaml
+tqdm

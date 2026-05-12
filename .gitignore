@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+**/build/
+*.so
+*.egg-info/
+.idea/
+*.pyc
+*.ipynb_checkpoints
+data-*/
+results/
+dist/

@@ -1,0 +1,2 @@
+recursive-include compactlogic *.cuh *.cu *.c *.cc *.cpp *.h *.hpp
+recursive-include include *.cuh *.h

@@ -1,0 +1,26 @@
+dataset: cancer-segmentation-1-thresholds
+
+struct: seg_spm
+num_chn: 1
+
+seed: 0
+batch_size: 128
+learning_rate: 0.02
+
+num_iterations: 1_001
+eval_freq: 10
+
+model_scale: 6
+num_layers: null
+tau: null
+
+num_gates: 16
+residual_init: true
+
+resample: true
+patience: 100
+max_iters: null
+
+freeze: false
+min_iters: null
+freeze_num_layers: null

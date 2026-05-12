@@ -1,0 +1,26 @@
+dataset: cifar-10-3-thresholds
+
+struct: conv_spm
+num_chn: 1
+
+seed: 0
+batch_size: 128
+learning_rate: 0.02
+
+num_iterations: 600_001
+eval_freq: 2_000
+
+model_scale: 128
+num_layers: null
+tau: 40.0
+
+num_gates: 16
+residual_init: true
+
+resample: true
+patience: 100
+max_iters: 400_000
+
+freeze: true
+min_iters: 400_000
+freeze_num_layers: 4

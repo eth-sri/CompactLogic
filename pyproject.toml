@@ -1,0 +1,41 @@
+[build-system]
+requires = [
+  "setuptools>=68",
+  "wheel",
+  "torch>=1.6.0",
+  "numpy",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compactlogic"
+version = "0.1.0"
+description = "Logic gate neural networks with differentiable training and fast discrete inference"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "MIT" }
+authors = [
+  { name = "Shengpu Wang", email = "wangshen@ethz.ch" },
+]
+dependencies = [
+  "torch>=1.6.0",
+  "numpy",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/ShengpuWang1/compact-logic"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["compactlogic"]
